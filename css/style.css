@@ -1,0 +1,182 @@
+body {
+
+	font-family: sans-serif;
+	margin: 0;
+
+}
+
+ul, li {
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+#wrapper {
+
+	width: 100%;
+	background: red;
+	overflow: hidden;
+
+}
+
+#aniCont {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+
+}
+
+#aniCont p {
+
+	margin: 0;
+	color: white;
+
+}
+
+#homePage {
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	background: rgba(192,192,192,1);
+
+}
+
+header img {
+
+	width: 100%;
+	display: block;
+
+}
+
+nav ul {
+
+	background: rgb(15,15,15);
+	overflow: hidden;
+	width: 100%;
+
+}
+
+nav ul li {
+
+	float: left;
+}
+
+nav ul li button {
+
+	display: inline-block;
+	padding: 10px 40px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+}
+
+nav ul li button:hover {
+
+	transition: linear 0.15s;
+	background: rgb(40,40,40);
+	box-shadow: 0px 0px 20px rgb(60,60,60);
+
+}
+
+nav ul li button:focus {
+
+	outline: none;
+
+}
+
+main {
+
+	width: 80%;
+	background: red;
+	margin: 80px auto;
+
+}
+
+
+article {
+
+	float: left;
+	width: 80%;
+	overflow: hidden;
+
+}
+
+article img {
+
+	width: 100%;
+	display: block;
+	position: relative;
+	left: -100%;
+
+}
+
+.imageContainer {
+
+	width: 60%;
+	background: white;
+	overflow: hidden;
+	float: left;
+
+}
+
+article .text {
+
+	float: right;
+	background: white;
+	width: 39%;
+
+}
+
+aside {
+
+	width: 15%;
+	float: right;
+
+}
+
+aside img {
+
+	width: 100%;
+	box-shadow: 0px 0px 30px black;
+
+}
+
+
+@keyframes moveout {
+
+	from {left: 0%;}
+	to {left: -100%;}
+
+}
+
+@keyframes movein {
+
+	from {left: 100%;}
+	to {left: 0%;}
+
+}
+
+@keyframes moveoutimg {
+
+	from {left: 0%;}
+	to {left:-100%;}
+
+}
+
+@keyframes moveinimg {
+
+	from {left: -100%;}
+	to {left: 0%;}
+
+}

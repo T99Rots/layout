@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	
+	<body onresize="heightChange()">
+
+		<div id="wrapper">
+
+			<div id="homePage" >
+				
+				<header> 
+				
+					<img src="img/banner3.jpg">
+
+					<nav>
+						
+						<ul>
+							<li><button>Home</button></li>
+							<li><button>Over mijn hobby</button></li>
+							<li><button>Nieuws</button></li>
+						</ul>
+
+					</nav>
+
+				</header>
+
+				<main>
+
+					<article>
+						
+						<div class="imageContainer">
+							<img src="img/pic4.jpg" id="image">
+						</div>
+
+						<div class="text">
+							
+							<h2>Bugatty chiron</h2>
+							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cupiditate, ipsa, totam aspernatur cumque dolorum veniam dolores consequuntur rem mollitia. Atque natus eveniet voluptate maiores quam, dignissimos, modi dolorem quis!</p>
+
+						</div>
+
+					</article>
+
+					<aside>
+						
+						<img src="img/ad1.jpg">
+
+					</aside>
+
+				</main>
+
+			</div>
+
+
+		</div>
+
+			
+	<div id="aniCont">
+		
+		<p>Homepage</p>
+		<button onclick="document.getElementById('homePage').style.animation = 'moveout 1s forwards'">hide</button>
+		<button onclick="document.getElementById('homePage').style.animation = 'movein 1s forwards'">show</button>
+		<p>Image</p>
+		<button onclick="document.getElementById('image').style.animation = 'moveoutimg 0.2s ease-in-out forwards'">hide</button>
+		<button onclick="document.getElementById('image').style.animation = 'moveinimg 0.2s ease-in-out forwards'">show</button>
+
+	</div>
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</body>
+
+</html>
