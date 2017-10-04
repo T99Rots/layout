@@ -1,182 +1,247 @@
+#body {
+
+	background-image: url(../img/road8.jpg);
+	background-position: center;
+	background-size: cover;
+	min-width: 760px;
+	background-repeat: no-repeat;
+
+}
+
 body {
 
-	font-family: sans-serif;
-	margin: 0;
+	font-family: 'Poppins', sans-serif;
 
 }
 
-ul, li {
+#backgroundOverlay {
 
-	margin: 0;
-	padding: 0;
-	list-style: none;
-
-}
-
-#wrapper {
-
-	width: 100%;
-	background: red;
-	overflow: hidden;
+	height: 100%;
+	background: white;
 
 }
 
-#aniCont {
+nav {
 
 	position: fixed;
-	top: 0;
-	left: 0;
-	background: black;
-
-}
-
-#aniCont p {
-
-	margin: 0;
-	color: white;
-
-}
-
-#homePage {
-
-	overflow-y: scroll;
-	overflow-x: hidden;
-	position: relative;
+	z-index: 2;
 	width: 100%;
-	background: rgba(192,192,192,1);
+	background: white;
 
 }
 
-header img {
+nav h1 {
 
-	width: 100%;
-	display: block;
+	text-align: center;
+	font-size: 50px;
+	font-weight: normal;
+	padding: 15px;
 
 }
 
 nav ul {
 
-	background: rgb(15,15,15);
-	overflow: hidden;
-	width: 100%;
+	display: flex;
+	justify-content: center;
 
 }
 
-nav ul li {
+nav ul li a {
 
-	float: left;
-}
-
-nav ul li button {
-
+	padding: 10px 21px;
 	display: inline-block;
-	padding: 10px 40px;
-	text-align: center;
-	color: white;
+	color: black;
 	text-decoration: none;
 	font-size: 20px;
-	border: none;
+
+}
+
+nav ul li a:hover {
+
+	transition: 0.25s ease-in-out;
+	background: rgba(0, 0, 0, 0.3)
+
+} 
+
+#container {
+
+	width: 100%;
+	position: absolute;
+	overflow-y: scroll;
+	display: block;
+	bottom: 0;
+	height: calc(100% - 100px);
+	
+}
+
+strong {
+
+	padding: 0 !important;
+
+}
+
+#inCenter {
+
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	min-width: 760px;
+
+}
+
+::-webkit-scrollbar {
+
 	background: none;
+	width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+	border-radius: 5px;
+	background: white;	
+
+}
+
+section {
+
+	width: 80%;
+	margin-bottom: 20px;
+
+}
+
+article {
+
+	height: 400px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.articleImage {
+	
+	height: 100%;
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 	cursor: pointer;
 
 }
 
-nav ul li button:hover {
+.articleText {
 
-	transition: linear 0.15s;
-	background: rgb(40,40,40);
-	box-shadow: 0px 0px 20px rgb(60,60,60);
-
-}
-
-nav ul li button:focus {
-
-	outline: none;
-
-}
-
-main {
-
-	width: 80%;
-	background: red;
-	margin: 80px auto;
-
-}
-
-
-article {
-
-	float: left;
-	width: 80%;
+	width: calc(50% - 20px);
+	background: rgba(255,255,255,0.9);
+	background-image: url(../img/readmore.png);
+	background-position: bottom right;
+	background-size: 150px 150px;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	cursor: pointer;
 	overflow: hidden;
 
 }
 
-article img {
+.articletext h3 {
 
-	width: 100%;
-	display: block;
-	position: relative;
-	left: -100%;
+	font-size: 30px;
+	text-align: center;
 
 }
 
-.imageContainer {
+.articletext * {
 
-	width: 60%;
-	background: white;
-	overflow: hidden;
-	float: left;
+	padding: 20px 30px 0px 30px;
 
 }
 
-article .text {
+.articletext p {
 
-	float: right;
-	background: white;
-	width: 39%;
+	font-size: 20px;
 
 }
+
+#articleImage1 {background-image: url(../img/car1.jpg);}
+#articleImage2 {background-image: url(../img/car2.jpg);}
+#articleImage3 {background-image: url(../img/car3.jpg);}
+#articleImage4 {background-image: url(../img/car4.jpg);}
+#articleImage5 {background-image: url(../img/car8.jpg);}
+#articleImage6 {background-image: url(../img/car6.jpg);}
+#articleImage7 {background-image: url(../img/car7.jpg);}
 
 aside {
 
-	width: 15%;
-	float: right;
+	width: calc(20% - 20px);
 
 }
 
 aside img {
 
 	width: 100%;
-	box-shadow: 0px 0px 30px black;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 
 }
 
+#anotherContainer {
 
-@keyframes moveout {
-
-	from {left: 0%;}
-	to {left: -100%;}
-
-}
-
-@keyframes movein {
-
-	from {left: 100%;}
-	to {left: 0%;}
-
-}
-
-@keyframes moveoutimg {
-
-	from {left: 0%;}
-	to {left:-100%;}
+	width: 80%;
+	position: absolute;
+	display: block;
+	bottom: 20px;
+	height: calc(100% - 140px);
+	left: 10%;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
 }
 
-@keyframes moveinimg {
+#footerText h4 {
 
-	from {left: -100%;}
-	to {left: 0%;}
+	font-size: 30px;
+	margin-bottom: 20px;
+
+}
+
+#footerText h5 {
+
+	font-size: 25px;
+	margin: 10px 0px;
+
+}
+
+#advertention {
+
+	position: relative;
+
+}
+
+#footerText {
+
+	width: calc(50% - 45px);
+	height: calc(100% - 30px);
+	padding-right: 22.5px;
+	border-right: 1px solid rgb(60,60,60);
+
+}
+
+#googleMaps {
+
+	width: calc(50% - 22.5px);
+	height: calc(100% - 30px);
+	margin-left: -15px;
+
+}
+
+section a {
+
+	color: black;
+	text-decoration: none;
 
 }

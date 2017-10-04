@@ -1,0 +1,115 @@
+body, html, .noScrollPage, #pages {
+
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+
+}
+
+.noScrollPage:not(:first-child) {
+
+	top: 100%;
+
+}
+
+.PageDownButton {
+
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+	height: 120px;
+
+}
+
+.PageDownButton img {
+
+	transition: 0.3s ease-in-out;
+	width: 35px;
+	position: absolute;
+	left: 50%;
+	margin-left: -17.5px;
+	bottom: 35px;
+
+}
+
+.PageDownButton:hover img {
+
+	transition: 0.3s ease-in-out;
+	bottom: 15px !important;	
+	
+}
+
+@keyframes pageUpOut {
+
+	from {top: 0;}
+	to {top: -100%;}	
+
+}
+
+@keyframes pageUpIn {
+
+	from {top: 100%;}
+	to {top: 0;}	
+
+}
+
+@keyframes pageDownOut {
+
+	from {top: 0;}
+	to {top: 100%;}	
+
+}
+
+@keyframes pageDownIn {
+
+	from {top: -100%;}
+	to {top: 0;}	
+
+}
+
+@keyframes titleSmall {
+
+	from {font-size: 50px;}
+	to {font-size: 30px;}
+
+}
+
+@keyframes titleBig {
+
+	from {font-size: 30px;}
+	to {font-size: 50px;}
+
+}
+
+@keyframes backgroundImage {
+	
+	from {background: white;}
+	to {background: rgba(255, 255, 255, 0.3);}
+
+}
+
+@keyframes backgroundWhite {
+	
+	from {background: rgba(255, 255, 255, 0.3);}
+	to {background: white;}
+
+}
+
+@keyframes backgroundImageFromGray {
+
+	from {background: rgba(30, 30, 30, 1);}
+	to {background: rgba(255, 255, 255, 0.3);}
+
+}
+
+
+@keyframes backgroundGray {
+
+	from {background: rgba(255, 255, 255, 0.3);}
+	to {background: rgba(30, 30, 30, 1);}
+
+}
+
+

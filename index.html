@@ -1,80 +1,274 @@
-<!DOCTYPE html>
 <html>
-	
+
 	<head>
-	
-		<title></title>
+		<title>Opdracht 4 - Layout</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/noscroll.css">
+		<link rel="stylesheet" href="css/slideshow.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/over.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	</head>
-	
-	<body onresize="heightChange()">
 
-		<div id="wrapper">
+	<body id="body">
+		
+		<div id="backgroundOverlay">
 
-			<div id="homePage" >
+			<nav>
+
+				<h1 id="title">Opdracht 4 - Layout</h1>
+
+				<ul>
+
+					<li><a href="#">Home</a></li>
+					<li><a href="over/index.html">Over mijn hobby</a></li>
+					<li><a href="#">Nieuws</a></li>				
+
+				</ul>
+
+			</nav>
+
+			<div id="pages">
 				
-				<header> 
-				
-					<img src="img/banner3.jpg">
+				<header id="frontPage" class="noScrollPage">
 
-					<nav>
-						
-						<ul>
-							<li><button>Home</button></li>
-							<li><button>Over mijn hobby</button></li>
-							<li><button>Nieuws</button></li>
-						</ul>
+					<div class="slideShowContainer" id="slideShow-1-Container">
 
-					</nav>
+						<div class="slideShowLeftButton slideShowButton"><img src="img/arrowLeft.png" alt="leftArrow"></div>
+						<div class="slideShowRightButton slideShowButton"><img src="img/arrowRight.png" alt="rightArrow"></div>			
+
+						<div class="slideShowImageContainer">
+
+							<div id="slideShow-1-Image-1" class="slideShow-1-Image">
+
+								<div class="slideShow-1-InImageText">
+
+									<h3>Lamborghini Aventador SV Roadster</h3>
+										
+									<p>De Aventador Superveloce is een van ‘s werelds meest geduchte en intense hypercars. Hoe boosaardig de Lamborghini wordt als ie het zonder dak moet stellen, merken we zodra we in een heel grote zandbak heel veel stof gaan opwerpen.</p>
+
+									<p>Er schuilt iets onheilspellends in de uitlaten van de SV. Je hoort het in de ijzingwekkende, getergde kreet zodra je boven de 6.000...</p>
+
+
+									<a href="articles/5/index.html">Lees Meer</a>
+
+								</div>
+
+							</div>
+
+							<div id="slideShow-1-Image-2" class="slideShow-1-Image">
+
+								<div class="slideShow-1-InImageText">
+
+									<h3>Mercedes AMG GT R: alle info en specs</h3>
+
+									<p>De groene kikker is nu echt helemaal officieel.<p>
+										
+									<p>Via de lekplaatjes wisten jullie natuurlijk allang hoe de Benz met z’n retrogrill eruit kwam te zien, maar vanavond heeft Mercedes dan het beest officieel op Goodwood uit de doeken gedaan. De GT R (zonder streepje, want Nissan) heeft net als de reguliere GT en de GT S de bekende 4.0 V8 onder de kap, alleen ditmaal perst het blok er 585 pk en 699 Nm aan koppel uit. Dat is 74 pk meer dan...</p>
+
+									<a href="articles/7/index.html">Lees Meer</a>
+
+								</div>
+
+							</div>
+
+							<div id="slideShow-1-Image-3" class="slideShow-1-Image">
+
+								<div class="slideShow-1-InImageText">
+
+									<h3>Aston Martin Vanquish S</h3>
+
+									<p>We moesten even aan onze hoofden krabbelen toen we hoorden dat de nieuwe Vanquish S een paar maanden na de introductie van de nieuwe DB11 zal komen.</p>
+
+									<p>In een vorig leven was Aston Martins CEO Andy Palmer de chef planning van Nissan. Dat was een enorme baan die onder meer betekende dat hij ervoor moest zorgen dat er genoeg variëteit in Nissans gamma bestond, zodat...</p>
+
+									<a href="articles/3/index.html">Lees Meer</a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="PageDownButton" id="homePageDownButton"><img src="img/arrowDown.png" alt="arrowDown" class="PageDownButtonImage"></div>
 
 				</header>
+				
+				<main id="mainPage" class="noScrollPage">
 
-				<main>
+					<div id="container">
 
-					<article>
-						
-						<div class="imageContainer">
-							<img src="img/pic4.jpg" id="image">
+						<div id="inCenter">
+
+							<section>
+								
+								<a href="articles/1/index.html"><article>
+
+									<div class="articleImage" id="articleImage1"></div>
+									
+									<div class="articleText">
+
+										<h3>MCLAREN P1 HEEFT NEDERLANDSE PRIJS</h3>
+										
+										<p>Nu wij toch aanwezig zijn bij de inwijding van Louwman Exclusive als McLaren-dealer, heeft het merk ons ook meteen maar de Nederlandse prijs van de P1 verteld.</p>
+
+										<p>De McLaren P1 gaat in Nederland 1.111.617 euro kosten, volgens Arjen van Beek van Louwman Exclusive 'lager dan...</p>
+
+									</div>
+
+								</article></a>
+
+
+								<a href="articles/2/index.html"><article>
+
+									<div class="articleImage" id="articleImage2"></div>
+									
+									<div class="articleText">
+
+										<h3>Koenigsegg One:1: Zweedse megacar met 1.360 pk</h3>
+										
+										<p>Dit is geen supercar, dit is geen hypercar, maar dit is de allereerste megacar ter wereld. Deze doorontwikkeling van de Koenigsegg Agera heeft namelijk een V8 die 1 Megawatt levert, dat staat gelijk aan 1359,6 pk...</p>
+
+									</div>
+
+								</article></a>
+
+
+								<a href="articles/3/index.html"><article>
+
+									<div class="articleImage" id="articleImage3"></div>
+									
+									<div class="articleText">
+
+										<h3>Aston Martin Vanquish S</h3>
+										
+										<p>We moesten even aan onze hoofden krabbelen toen we hoorden dat de nieuwe Vanquish S een paar maanden na de introductie van de nieuwe DB11 zal komen.</p>
+
+										<p>In een vorig leven was Aston Martins CEO Andy Palmer de chef planning van Nissan. Dat was een enorme baan die onder meer betekende dat hij ervoor moest zorgen dat er genoeg variëteit in Nissans gamma bestond, zodat...</p>
+
+									</div>
+
+								</article></a>
+
+
+								<a href="articles/4/index.html"><article>
+
+									<div class="articleImage" id="articleImage4"></div>
+
+									<div class="articleText">
+
+										<h3>PAGANI ZONDA R: OM MISSELIJK VAN TE WORDEN</h3>
+										
+										<p>De Zonda R is het beste wat Pagani tot op heden kan aanbieden. De techniek is met veel oog voor detail verpakt in een exclusief omhulsel. De prijs ervan bedraagt dan ook maar liefst € 1.460.000,- (exclusief belastingen). Om misselijk van te worden.</p>
+
+									</div>
+
+								</article></a>
+
+
+								<a href="articles/5/index.html"><article>
+
+									<div class="articleImage" id="articleImage5"></div>
+
+									<div class="articleText">
+
+										<h3>Lamborghini Aventador SV Roadster</h3>
+										
+										<p>De Aventador Superveloce is een van ‘s werelds meest geduchte en intense hypercars. Hoe boosaardig de Lamborghini wordt als ie het zonder dak moet stellen, merken we zodra we in een heel grote zandbak heel veel stof gaan opwerpen.</p>
+
+										<p>Er schuilt iets onheilspellends in de uitlaten van de SV. Je hoort het in de ijzingwekkende, getergde kreet zodra je boven de 6.000...</p>
+
+									</div>
+
+								</article></a>
+
+
+								<a href="articles/6/index.html"><article>
+
+									<div class="articleImage" id="articleImage6"></div>
+
+									<div class="articleText">
+
+										<h3>SNELSTE 911 OOIT</h3>
+										
+										<p>Porsche heeft met de 911 GT2 RS een nieuw record op de Nordschleife weten neer te zetten. De hardcore 911 is de snelste straatlegale auto op het 20,6 kilometer lange circuit.</p>
+
+										<p>Porsche zegt bij de ontwikkeling van de 911 GT2 RS onder andere als doel te hebben gehad om een 'rondje' Nürburgring-Nordschleife in minder dan...</p>
+
+									</div>
+
+								</article></a>
+
+
+								<a href="articles/7/index.html"><article>
+
+									<div class="articleImage" id="articleImage7"></div>
+
+									<div class="articleText">
+
+										<h3>Mercedes AMG GT R: alle info en specs</h3>
+
+										<p>De groene kikker is nu echt helemaal officieel.</p>
+										
+										<p>Via de lekplaatjes wisten jullie natuurlijk allang hoe de Benz met z’n retrogrill eruit kwam te zien, maar vanavond heeft Mercedes dan het beest officieel op Goodwood uit de doeken gedaan. De GT R (zonder streepje, want Nissan) heeft net als de reguliere GT en de GT S de bekende 4.0 V8 onder de kap, alleen ditmaal perst het blok er 585 pk en 699 Nm aan koppel uit. Dat is 74 pk meer dan...</p>
+
+									</div>
+
+								</article></a>
+
+							</section>
+
+							<aside>
+								
+								<div id="advertention"><a href="http://www.h-drentals.com" target="_blanck"><img src="img/ad3.jpg"></a></div>
+
+							</aside>
+
 						</div>
 
-						<div class="text">
-							
-							<h2>Bugatty chiron</h2>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cupiditate, ipsa, totam aspernatur cumque dolorum veniam dolores consequuntur rem mollitia. Atque natus eveniet voluptate maiores quam, dignissimos, modi dolorem quis!</p>
-
-						</div>
-
-					</article>
-
-					<aside>
-						
-						<img src="img/ad1.jpg">
-
-					</aside>
+					</div>
 
 				</main>
 
+				<footer class="noScrollPage">
+					
+					<div id="anotherContainer">
+
+						<div id="footerText">
+
+							<h4>Contact</h4>
+
+							<h5>Email en telefoon:</h5>
+							<p>Business email: T99.Rots@gmail.com</p>
+							<p>School email: 99044999@mydavinci.nl</p>
+							<p>Telefoon: 06-67582815</p>
+
+							<h5>Adres:</h5>
+							<p>Leerparkpromenade 100</p>
+							<p>3312 KW Dordrecht</p>
+							<p>Nederland</p>
+
+						</div>
+
+						<div id="googleMaps"></div>
+
+					</div>
+
+				</footer>
+				
 			</div>
-
-
+			
 		</div>
 
-			
-	<div id="aniCont">
-		
-		<p>Homepage</p>
-		<button onclick="document.getElementById('homePage').style.animation = 'moveout 1s forwards'">hide</button>
-		<button onclick="document.getElementById('homePage').style.animation = 'movein 1s forwards'">show</button>
-		<p>Image</p>
-		<button onclick="document.getElementById('image').style.animation = 'moveoutimg 0.2s ease-in-out forwards'">hide</button>
-		<button onclick="document.getElementById('image').style.animation = 'moveinimg 0.2s ease-in-out forwards'">show</button>
-
-	</div>
-
-		<script type="text/javascript" src="js/script.js"></script>
+		<script src="js/slideshow.js"></script>
+		<script src="js/noscroll.js"></script>
+		<script src="js/script.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwIJVa6SVhk1JjSCm2ZDRyYvrVEe6fWJ0&callback=initMap"></script>
 
 	</body>
 
 </html>
+	
